@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./style/prod/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="title">Grid Calculator</h1>
+            <p class="text-center">An easy way for designers to see the grid size to make elements</p>
+
+        </div>
+        <form id="gridForm">
+                <section class="-chunks">
+                    <div class="form-chunk">
+                        <label for="pageWidth">Page Width</label>
+                        <input type="number" name="pageWidth" id="pageWidth" placeholder="0000"
+                            required>
+                    </div>
+                    <div class="form-chunk">
+                        <label for="marginLeft">Margin Left</label>
+                        <input type="number" name="marginLeft" id="marginLeft" placeholder="0000"
+                            required>
+                    </div>
+                    <div class="form-chunk">
+                        <label for="marginRight">Margin Right</label>
+                        <input  type="number" name="marginRight" id="marginRight" placeholder="0000"
+                            required>
+                    </div>
+                    <div class="form-chunk">
+                        <label for="colNumber">Nº collumns</label>
+                        <input  type="number" name="colNumber" id="colNumber" placeholder="0000"
+                            required>
+                    </div>
+                    <div class="form-chunk">
+                        <label for="gutter">Gutter</label>
+                        <input  type="number" name="gutter" id="gutter" placeholder="0000"
+                            required>
+                    </div>
+                </section>
+                <button class="button --white" type="submit">CALCULATE</button>
+        </form>
+        <div id="resultsBlock">
+            <h3 class="results-subtitle">Result:</h3>
+            <div class="results">
+                <h3 class="-block">Collumn Width: <span class="-res" id="colResult"></span></h3>
+                <h3 class="-block">All Collumns Width: <span class="-res" id="widthResult"></span></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
